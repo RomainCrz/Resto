@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Regular";
+    src: url(../fonts/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "Medium";
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Light";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+$regular : "Regular", sans-serif;
+$medium : "Medium", sans-serif;
+$light : "Light", sans-serif;
+$grey : rgb(33,32,30);
+$black : rgb(15, 15, 15);
+$white : rgb(238,238,238);
+$orange : rgb(166,114,69);
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: $grey;
+    
+}
+
+header{
+    background: url(../img/bg-slider-06.jpg) center/cover;
+}
+.background{
+    background: url(../img/bg-menu-01.jpg);
+}
+.fifth{
+    background: url(../img/gmap.jpg);
+}
+footer{
+    background: url(../img/bg-footer.jpg);
+}
+
+@mixin t_orange {
+    color: $orange;
+    font-family: $regular;
+}
+
+@mixin t_bold {
+    font-family: $medium;
+    text-transform: uppercase;
+}

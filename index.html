@@ -7,6 +7,7 @@
     <title>Resto</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
 
 
 </head>
@@ -19,7 +20,7 @@
                 <p>Resto</p>
             </div>
 
-            <ul>
+            <ul class="navigation">
                 <li>Home</li>
                 <li>reservations</li>
                 <li>menu</li>
@@ -29,7 +30,7 @@
                 <li>contact</li>
             </ul>
 
-            <ul>
+            <ul class="nav_reseaux">
                 <li><i class="fa-brands fa-facebook-f"></i></li>
                 <li><i class="fa-brands fa-twitter"></i></li>
                 <li><i class="fa-brands fa-instagram"></i></li>
@@ -42,7 +43,7 @@
             <p class="texte_intro">Welcome to</p>
             <h1>the resto</h1>
             <img src="./img/ic-plate-big.png" alt="logo_fourchette">
-            <p class="slogan">we serve only the fresshest ingredients !</p>
+            <p class="slogan">we serve only the freshest ingredients !</p>
         </div>
 
     </header>
@@ -57,8 +58,8 @@
                 <h3>our store</h3> 
                 <img src="/img/ic-plate.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos odit itaque nihil assumenda! Exercitationem ipsa quos architecto ipsam esse nostrum doloremque possimus, eos unde numquam quibusdam voluptatum adipisci officiis odio et, repudiandae, iusto velit odit!</p>
-                <img src="/img/avatar-01.jpg" alt="">
-                <h4>Russel Stephens</h4>
+                <img src="/img/avatar-01.jpg" alt="" class="photo_chef">
+                <h4>Russell Stephens</h4>
                 <h5>CHEF COOK</h5>
 
             </div>
@@ -81,7 +82,7 @@
             <div class="affiche_menu">
 
             <h2>Discover</h2>
-            <img src="/img/ic-plate-big.png" alt="">  
+            <img src="/img/ic-plate.png" alt="">  
             <ul>
                 <li>Breakfast</li>
                 <li>Lunch</li>
@@ -94,8 +95,8 @@
                 <div class="menu_gauche">
 
                     <div class="plat">
-                        <div class="photo_plat"><img src="/img/dish-gallery-01.jpg" alt=""></div>
-                        <div class="plat">
+                        <div class="photo_plat"><img src="/img/dish-item-01.jpg" alt=""></div>
+                        <div class="plat_desc">
                             <h4>italian source mushroom</h4>
                             <h5>Mushroom / Garlic / Veggies</h5>
                         </div>
@@ -103,8 +104,8 @@
                     </div>
 
                     <div class="plat">
-                        <div class="photo_plat"><img src="/img/dish-gallery-03.jpg" alt=""></div>
-                        <div class="plat">
+                        <div class="photo_plat"><img src="/img/dish-item-03.jpg" alt=""></div>
+                        <div class="plat_desc">
                             <h4>tenu roast source</h4>
                             <h5>Tune / Potatoes / Rice</h5>
                         </div>
@@ -112,8 +113,8 @@
                     </div>
 
                     <div class="plat">
-                        <div class="photo_plat"><img src="/img/dish-gallery-05.jpg" alt=""></div>
-                        <div class="plat">
+                        <div class="photo_plat"><img src="/img/dish-item-05.jpg" alt=""></div>
+                        <div class="plat_desc">
                             <h4>salted fried chicken</h4>
                             <h5>Chicken / Olive oil / Salt</h5>
                         </div>
@@ -121,8 +122,8 @@
                     </div>
 
                     <div class="plat">
-                        <div class="photo_plat"><img src="/img/dish-gallery-07.jpg" alt=""></div>
-                        <div class="plat">
+                        <div class="photo_plat"><img src="/img/dish-item-07.jpg" alt=""></div>
+                        <div class="plat_desc">
                             <h4>imported salmon steak</h4>
                             <h5>Salmon / Veggies / Oil</h5>
                         </div>
@@ -136,8 +137,8 @@
                 <div class="menu_droite">
 
                     <div class="plat">
-                        <div class="photo_plat"><img src="/img/dish-gallery-02.jpg" alt=""></div>
-                        <div class="plat">
+                        <div class="photo_plat"><img src="/img/dish-item-02.jpg" alt=""></div>
+                        <div class="plat_desc">
                             <h4>fried potatoes with garlic</h4>
                             <h5>Potatoes / Olive Oil / Garlic</h5>
                         </div>
@@ -145,8 +146,8 @@
                     </div>
 
                     <div class="plat">
-                        <div class="photo_plat"><img src="/img/dish-gallery-04.jpg" alt=""></div>
-                        <div class="plat">
+                        <div class="photo_plat"><img src="/img/dish-item-04.jpg" alt=""></div>
+                        <div class="plat_desc">
                             <h4>roast pork (4 sticks)</h4>
                             <h5>Pork / Veggies / Shoyu</h5>
                         </div>
@@ -154,8 +155,8 @@
                     </div>
 
                     <div class="plat">
-                        <div class="photo_plat"><img src="/img/dish-gallery-06.jpg" alt=""></div>
-                        <div class="plat">
+                        <div class="photo_plat"><img src="/img/dish-item-06.jpg" alt=""></div>
+                        <div class="plat_desc">
                             <h4>crab with curry sources</h4>
                             <h5>Crab / Potatoes / Rice</h5>
                         </div>
@@ -163,8 +164,8 @@
                     </div>
 
                     <div class="plat">
-                        <div class="photo_plat"><img src="/img/dish-gallery-08.jpg" alt=""></div>
-                        <div class="plat">
+                        <div class="photo_plat"><img src="/img/dish-item-08.jpg" alt=""></div>
+                        <div class="plat_desc">
                             <h4>baked potato pizza</h4>
                             <h5>Potato / Bread / Chesse</h5>
                         </div>
@@ -184,70 +185,213 @@
 
     <section class="third">
 
-        <div class="third_left">
+        <div class="third_container">
 
-            <div class="third_left_container">
+            <div class="third_left">
 
-                <h2>Time</h2>
-                <h3>Open</h3>
-                <img src="/img/ic-plate.png" alt="">
-                <h4>monday - friday</h4>
-                <h5>7AM - 11AM (Breakfast)</h5>
-                <h5>11AM - 10PM (Lunch/Dinner)</h5>
-                <h4>saturday / sunday</h4>
-                <h5>8AM - 1PM (Brunch)</h5>
-                <h5>1PM - 9PM (Lunch/Dinner)</h5>
-                <h4>+15 890 979 25 52</h4>
-                
+                <div class="third_left_container">
+
+                    <h2>Time</h2>
+                    <h3>Open</h3>
+                    <img src="/img/ic-plate.png" alt="">
+                    <h4>monday - friday</h4>
+                    <h5>7AM - 11AM (Breakfast)</h5>
+                    <h5>11AM - 10PM (Lunch/Dinner)</h5>
+                    <h4>saturday / sunday</h4>
+                    <h5>8AM - 1PM (Brunch)</h5>
+                    <h5>1PM - 9PM (Lunch/Dinner)</h5>
+                    <h4>+15 890 979 25 52</h4>
+                    
+                </div>
+
             </div>
 
-        </div>
+            <div class="third_right">
 
-        <div class="third_right">
+                <div class="third_right_container">
 
-            <div class="third_right_container">
+                    <h2>Reservation</h2>
+                    <h3>online booking</h3>
+                    <img src="/img/ic-plate.png" alt="">
+                    <form action="">
+                        <div>
+                            <select name="people" id="people_select">
+                                <option value="people">People</option>
+                                <option value="people">Group</option>
+                            </select>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div>
+                            <input type="date" name="date_resa" id="date_resa">
+                        </div>
+                        <div>
+                            <input type="time" name="heure" id="heure">
+                        </div>
+                    </form>
 
-                <h2>Reservation</h2>
-                <h3>online booking</h3>
-                <img src="/img/ic-plate.png" alt="">
-                <form action="">
-                    <div>
-                        <select name="people" id="people_select">
-                            <option value="people">People</option>
-                        </select>
-                    </div>
-                    <div>
-                        <input type="date" name="date_resa" id="date_resa">
-                    </div>
-                    <div>
-                        <input type="time" name="heure" id="heure">
-                    </div>
-                </form>
+                    <form action="">
 
-                <form action="">
+                        <div>
+                            <input type="text" id="name" value="Name">
+                        </div>
+                        <div>
+                            <input type="tel" name="phone" id="phone" value="Phone">
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="email" value="Email">
+                        </div>
 
-                    <div>
-                        <label for="name">Name</label>
-                        <input type="text" id="name">
-                    </div>
-                    <div>
-                        <label for="phone">Phone</label>
-                        <input type="tel" name="phone" id="phone">
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
+                    </form>
 
-                </form>
+                    <input type="submit" value="book now">
 
-                <input type="submit" value="book now">
+                </div>
 
             </div>
 
         </div>
 
     </section>
+
+    <section class="fourth">
+
+        <div class="fourth_title">
+
+            <h2>Upcoming</h2>
+            <h3>our event</h3>
+            <img src="/img/ic-plate-big.png" alt="">
+
+        </div>
+
+        <div class="events_container">
+
+            <div class="events_left">
+
+                <div class="events_left_top">
+
+                    <div class="events_left_top_left">
+
+                        <img src="/img/event-01.jpg" alt="">
+                        <div class="events_date">
+                            <p>08</p>
+                            <p>July</p>
+                        </div>
+
+                    </div>
+
+                    <div class="events_left_top_right">
+
+                        <p class="events_name">Night Inspirescu Party</p>
+                        <p class="events_infos"><i class="fa-solid fa-location-dot"></i> Restaurant Resto <i class="fa-solid fa-clock"></i> 10:00pm - 6:00am </p>
+                        <p class="buy_tickets">buy tickets</p>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="events_left_bottom">
+
+                    <div class="events_left_bottom_left">
+
+                        <img src="/img/event-02.jpg" alt="">
+                        <div class="events_date">
+                            <p>08</p>
+                            <p>July</p>
+                        </div>
+
+                    </div>
+
+                    <div class="events_left_bottom_right">
+
+                        <p class="events_name">DJ RobagRuhme</p>
+                        <p class="events_infos"><i class="fa-solid fa-location-dot"></i> Restaurant Resto <i class="fa-solid fa-clock"></i> 10:00pm - 6:00am </p>
+                        <p class="buy_tickets">buy tickets</p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="events_right">
+
+                <img src="/img/event-03.jpg" alt="">
+                <div class="events_right_container">
+
+                    <div class="events_date">
+                        <p>08</p>
+                        <p>July</p>
+                    </div>
+
+                    <div class="events_right_infos">
+
+                        <p class="events_name">Thousands celebrities at Johnnie Night</p>
+                        <p class="events_infos"><i class="fa-solid fa-location-dot"></i> Restaurant Resto <i class="fa-solid fa-clock"></i> 10:00pm - 6:00am </p>
+                        <p class="buy_tickets">buy tickets</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="fifth">
+
+        <div class="cuisinier">
+
+            <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consequatur sed sit ab consequuntur, nulla asperiores neque distinctio esse ipsa ex similique excepturi at nobis deleniti velit debitis. Animi aliquid dicta maiores molestiae perspiciatis in quaerat dolor accusantium, fuga quos.<i class="fa-solid fa-quote-right"></i></p>
+            <h4>Russel Stephens</h4>
+            <h5>CEO - HeadPassion</h5>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="footer_left">
+            <div class="footer_left_container">
+
+                <h2>Resto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, sunt <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ducimus vel autem, placeat rem consectetur fugiat earum commodi pariatur vitae assumenda quod eveniet cumque recusandae.</p>
+
+            </div>
+        </div>
+
+        <div class="footer_right">
+            <div class="footer_right_container">
+
+                <div class="newsletter">
+
+                    <h3>newsletter</h3>
+                    <input type="email" name="" id="" value="Your email adress" >
+
+                </div>
+
+                <div class="follow">
+
+                    <h3>follow us:</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-pinterest"></i></li>
+                    </ul>
+
+                </div>
+                
+
+            </div>
+        </div>
+
+    </footer>
 
 
 </body>

@@ -1,0 +1,152 @@
+.third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+   
+    .third_container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        max-width: 1000px;
+
+        .third_left{
+            width: 30%;
+            background: black;
+
+            .third_left_container{
+                margin: 20px;
+                border: 1px dashed grey;
+                text-align: center;
+                padding: 20px 0px;
+
+                h2{
+                    @include t_orange;
+                    font-weight: 100;
+                    font-size: 2rem;
+                    margin-bottom: -15px
+                }
+                h3{
+                    @include t_bold;
+                    color: $white;
+                    letter-spacing: 2px;
+                    margin-bottom: 30px;
+                }
+                h4{
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                    color: $orange;
+                    font-family: $light;
+                    text-transform: uppercase;
+                }
+                h5{
+                    color: rgb(169,166,158);
+                    font-family: $light;
+                    font-weight: 100;
+                    font-size: 0.7rem;
+                }
+
+            }
+        }
+        .third_right{
+            height: 100%;
+            width: 70%;
+            background: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+
+            .third_right_container{
+                
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+
+                h2{
+                    @include t_orange;
+                    font-size: 2rem;
+                    font-weight: 100;
+                    margin-bottom: -10px
+                }
+                h3{
+                    @include t_bold;
+                    margin-bottom: 15px;
+                }
+                img{
+                    margin-bottom: 30px;
+                }
+                form{
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+
+                    div{
+                        
+                        width: 30%;
+                        margin-right: 10px;
+                        border-bottom: 1px solid gray;
+                        margin-bottom: 20px;
+                        padding-bottom: 10px;
+                        text-align: left;
+                        position: relative;
+                        
+                        #people_select{
+                            border: none;
+                            background: none;
+                            font-family: $light;
+                            font-weight: bold;
+                            appearance: none; 
+                        }
+                        #date_resa{
+                            color: black;
+                            font-weight: bold;
+                        }
+                        #heure{
+                            color: black;
+                            font-weight: bold;
+                        }
+                        i{
+                            position: absolute;
+                            color: black;
+                            font-size: 0.7rem;
+                            right: 5px;
+                            top : 5px
+                        }
+
+                        input{
+                            background: none;
+                            border: none;
+                            color: grey;
+                            font-family: $light;
+                        }
+
+                    }
+
+                    
+                }
+
+                input[type="submit"]{
+                    border: none;
+                    background: black;
+                    color: $white;
+                    @include t_bold;
+                    margin-top: 20px;
+                    letter-spacing: 3px;
+                    padding: 10px 20px;
+                    border-radius: 50px;
+                    font-size: 0.8rem;
+
+                }
+
+            }
+        }
+    }
+}

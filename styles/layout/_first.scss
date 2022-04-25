@@ -1,0 +1,75 @@
+.first{
+    display: flex;
+    max-height: 450px;
+    margin-bottom: 300px;
+
+    .first_left{
+        width: 50%;
+        background: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .left_container{
+            border: 1px dashed $orange;
+            text-align: center;
+            margin: 20px 20px;
+
+            h2{
+                @include t_orange;
+                font-size: 2rem;
+                font-weight: 500; 
+                margin-top: 30px;
+                margin-bottom: -13px
+            }
+            h3{
+                @include t_bold;
+                margin-bottom: 20px;
+            }
+            img{
+                margin-bottom: 20px ;
+            }
+            p{
+                font-family: $light;
+                color: $grey;
+                width: 95%;
+                margin: 0 auto;
+                font-size: 0.9rem;
+            }
+            .photo_chef{
+                margin-top: 20px;
+                border-radius: 100px;
+                height: 85px;
+            }
+            h4{
+                font-family: $light;
+                color: black;
+                font-weight: 900;
+                letter-spacing: 0.5px;
+            }
+            h5{
+                font-family: $light;
+                margin-top: 2px;
+                margin-bottom: 30px;
+                font-size: 0.7rem;
+                color: rgb(172, 172, 172);
+            }
+        }
+    }
+
+    .first_right{
+        width: 50%;
+
+        .first_img_container{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+            img{
+                height:  100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

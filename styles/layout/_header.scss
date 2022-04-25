@@ -1,0 +1,91 @@
+header{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    nav{
+        position: absolute;
+        top: 0px;
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        height: 50px;
+        
+
+        .nom{
+            font-family: $regular;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 15%;
+            max-width: 130px;
+            
+            p{
+                font-size: 3rem;
+                font-weight: 600;
+            }
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding-left: 0;
+            align-items: center;
+
+        }
+
+        .navigation {
+            width: 70%;
+            li{
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: rgb(146, 146, 146);
+
+            }
+        }
+        .nav_reseaux{
+            width: 15%;
+            max-width: 130px;
+            font-size: 0.8rem;
+            ul{
+                width: 100%;
+            }
+        }
+    }
+
+    .intro{
+        position: absolute;
+        text-align: center;
+        top : 45%;
+        transform: translateY(-50%);
+
+        .texte_intro{
+            @include t_orange;
+            font-size: 3.5rem;
+            height: 3.5rem;
+        }
+        h1{
+            @include t_bold;
+            color: $white;
+            letter-spacing: 8px;
+            font-size: 4rem;
+            margin-top: -15px;
+            margin-bottom: 40px;
+        }
+        img{
+            height: 35px;
+        }
+        .slogan{
+            margin-top: 40px;
+            color: $white;
+            font-family: $light;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+    }
+}
