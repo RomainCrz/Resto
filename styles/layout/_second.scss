@@ -22,7 +22,6 @@
 
             @media screen and (max-width: 770px) {
                 width: 90%;
-                max-width: none;
             }
 
             h2{
@@ -73,6 +72,10 @@
                     height: 70px;
                     border-radius: 100px;
                     margin-right: 10px;
+
+                    @media screen and (min-width: 1900px) {
+                        height: 90px;
+                    }
                 }
                 .plat{
                     position: relative;

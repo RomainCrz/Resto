@@ -368,7 +368,6 @@ header .intro .slogan {
 @media screen and (max-width: 770px) {
   .second .background .affiche_menu {
     width: 90%;
-    max-width: none;
   }
 }
 
@@ -428,6 +427,12 @@ header .intro .slogan {
   height: 70px;
   border-radius: 100px;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1900px) {
+  .second .background .affiche_menu .menu img {
+    height: 90px;
+  }
 }
 
 .second .background .affiche_menu .menu .plat {
