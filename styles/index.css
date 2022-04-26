@@ -368,6 +368,7 @@ header .intro .slogan {
 @media screen and (max-width: 770px) {
   .second .background .affiche_menu {
     width: 90%;
+    max-width: none;
   }
 }
 
