@@ -1,0 +1,96 @@
+footer{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer_container{
+        height: 80%;
+        width: 80%;
+        margin: 0px auto;
+        display: flex;
+        justify-content: center;
+
+        .footer_left{
+            width: 50%;
+            max-width: 450px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            
+
+            .footer_left_container{
+                padding-right: 40px;
+                
+                h2{
+                    
+                    margin-top: 0px;
+                    @include t_orange;
+                    font-size: 2rem;
+                    font-weight: 100;
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    
+                    color: $white;
+                    font-family: $light;
+                    color: grey;
+                    line-height: 25px;
+                    font-size: 0.8rem;
+
+                }
+            }
+        }
+
+        .footer_right{
+            width: 50%;
+            max-width: 450px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            .footer_right_container{
+                padding-left: 40px;
+                width: 50%;
+
+                .newsletter{
+                    margin-bottom: 30px;
+                    h3{
+                        @include t_bold;
+                        color: $white;
+                        font-size: 0.8rem;
+                        font-weight: 100;
+                        margin-bottom: 8px;
+                    }
+                    input{
+                        background: none;
+                        border: 1px solid rgba(128, 128, 128, 0.164);
+                        color: grey;
+                        padding: 5px 20px 5px 10px;
+                        font-size: 0.7rem;
+                    }
+                }
+                .follow{
+                    display: flex; 
+                    justify-content: space-between;
+
+                    h3{
+                        @include t_bold;
+                        color: $white;
+                        font-weight: 100;
+                        font-size: 0.9rem;
+                    }
+                    ul{
+                        width: 60%;
+                        list-style: none;
+                        display: flex;
+                        justify-content: space-around;
+                        font-size: 0.9rem;
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+}

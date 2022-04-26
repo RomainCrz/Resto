@@ -42,11 +42,18 @@ header{
         .navigation {
             width: 70%;
             li{
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            color: rgb(146, 146, 146);
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                color: rgb(146, 146, 146);
+
+                &:hover{
+                    color: $white;
+                    cursor: pointer;   
+                    text-decoration: underline;
+                }
 
             }
+
         }
         .nav_reseaux{
             width: 15%;

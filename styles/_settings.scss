@@ -36,10 +36,10 @@ header{
     background: url(../img/bg-menu-01.jpg);
 }
 .fifth{
-    background: url(../img/gmap.jpg);
+    background: url(../img/gmap.jpg) center/cover;
 }
 footer{
-    background: url(../img/bg-footer.jpg);
+    background: url(../img/bg-footer.jpg) center/cover;
 }
 
 @mixin t_orange {

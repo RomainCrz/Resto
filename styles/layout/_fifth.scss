@@ -1,0 +1,62 @@
+.fifth{
+    height: 300px;
+    position: relative;
+
+    .cuisinier{
+        position: absolute;
+        background: $white;
+        width: 60%;
+        left: 50%;
+        top: -150px;
+        transform: translateX(-50%);
+        display: flex;
+        height: 250px;
+
+        .cuisinier_img_container{
+            height: 100%;
+            width: 100%;
+            position: relative;
+
+            img{
+                position: absolute;
+                height: 50px;
+                border-radius: 50px;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+            .cuisinier_container{
+                margin : 60px auto 0px;
+                width: 80%;
+                text-align:center;
+                font-family: $light;
+
+                p{
+                    font-size: 0.8rem;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+
+                    sup{
+                        margin-right: 5px;
+                    }
+                }
+
+                h4{
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    margin-bottom: 15px;
+                }
+                h5{
+                    color: $orange;
+                    font-weight: 100;
+                }
+
+
+            }
+        }
+        
+
+        
+
+        
+    }
+}

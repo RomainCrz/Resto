@@ -1,0 +1,202 @@
+.fourth{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+
+    
+    
+
+    .fourth_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        max-width: 1000px;
+        
+
+        .fourth_title{
+            h2{
+                @include t_orange;
+                font-weight: 100;
+                font-size: 1.8rem;
+                margin-bottom: -8px
+            }
+            h3{
+                @include t_bold;
+                color: $white;
+                font-size: 1.5rem;
+                letter-spacing: 2px;
+                margin-bottom: 20px;
+            }
+            img{
+                margin-bottom: 20px;
+            }
+        }
+
+        .events_container{
+            display: flex;
+            height: 300px;
+
+            .events_left{
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+
+                #events_left_bottom{
+                    margin-bottom: 0px;
+                }
+                .events_left_side{
+                    height: 50%;
+                    display: flex;
+                    margin-bottom: 20px;
+                    margin-right: 20px;
+                    max-height: 140px;
+
+                    .events_left_left{
+                        width: 40%;
+                        position: relative;
+
+                        .events_date{
+                            position: absolute;
+                            background: $grey;
+                            color: $white;
+                            top : 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            padding: 10px 15px;
+
+                            h2{
+                                font-size: 1.2rem;
+                                margin-bottom: -5px;
+                                font-family: $light;
+                            }
+                            h3{
+                                font-size: 0.8rem;
+                                font-family: $light;
+                                font-weight: 100;
+                            }
+                        }
+                    }
+                    .events_left_right{
+                        width: 68%;
+                        background: $white;
+                        padding-left: 10px;
+                        text-align: left;
+                        padding-right: 30px;
+                        .events_name{
+                            
+                            font-family: $light;
+                            letter-spacing: 1px;
+                            margin: 20px 0px 15px;
+                        }
+                        .events_infos{
+                            font-size: 0.8rem;
+                            color: grey;
+                            font-family: $light;
+
+                            .fa-clock{
+                                padding-left: 5px
+                            }
+                        }
+                        .buy_tickets{
+                            @include t_bold;
+                            font-size: 0.8rem;
+                            margin-top: 15px;
+                            color: $grey;
+                        }
+
+                    }
+
+                }
+            }
+
+            .events_right{
+                width: 40%;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .events_right_container{
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .events_right_background{
+                        background: $white;
+                        position: relative;
+                        width: 85%;
+                        height: 85%;
+
+                        .events_date{
+                            position: absolute;
+                            background: $grey;
+                            color: $white;
+                            top : 0px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            padding: 10px 15px;
+
+
+                            h2{
+                                font-size: 1.2rem;
+                                margin-bottom: -5px;
+                                font-family: $light;
+                            }
+                            h3{
+                                font-size: 0.8rem;
+                                font-family: $light;
+                                font-weight: 100;
+                            }
+                        }
+                        .events_right_infos{
+                            margin-top: 90px;
+                            background: $white;
+                            text-align: center;
+                            padding: 0px 20px;
+                            .events_name{
+                                
+                                font-family: $light;
+                                letter-spacing: 1px;
+                                margin: 20px 0px 15px;
+                            }
+                            .events_infos{
+                                font-size: 0.8rem;
+                                color: grey;
+                                font-family: $light;
+
+                                .fa-clock{
+                                    padding-left: 5px
+                                }
+                            }
+                            .buy_tickets{
+                                @include t_bold;
+                                font-size: 0.8rem;
+                                margin-top: 50px;
+                                color: $grey;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}

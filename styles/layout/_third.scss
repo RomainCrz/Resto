@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 450px;
+    margin-bottom: 100px;
    
     .third_container{
         height: 100%;
@@ -143,7 +144,15 @@
                     padding: 10px 20px;
                     border-radius: 50px;
                     font-size: 0.8rem;
-
+                    transition: ease;
+                    &:hover{
+                        padding: 9px 19px;
+                        background: none;
+                        color: black;
+                        border: 1px black solid;
+                        cursor: pointer;
+                        
+                    }
                 }
 
             }
