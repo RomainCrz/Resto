@@ -40,6 +40,9 @@ header{
 }
 footer{
     background: url(../img/bg-footer.jpg) center/cover;
+    @media screen and (max-width: 770px) {
+        background: url(../img/bg-footer.jpg) right/cover;
+    }
 }
 
 @mixin t_orange {

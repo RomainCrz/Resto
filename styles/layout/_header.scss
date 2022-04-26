@@ -28,6 +28,8 @@ header{
                 font-size: 3rem;
                 font-weight: 600;
             }
+
+            
         }
 
         ul{
@@ -41,10 +43,14 @@ header{
 
         .navigation {
             width: 70%;
+            @media screen and (max-width: 770px) {
+                display: none;
+            }
             li{
                 font-size: 0.8rem;
                 text-transform: uppercase;
                 color: rgb(146, 146, 146);
+                
 
                 &:hover{
                     color: $white;
@@ -59,6 +65,12 @@ header{
             width: 15%;
             max-width: 130px;
             font-size: 0.8rem;
+            @media screen and (max-width: 770px) {
+                width: 20%;
+            }
+            @media screen and (max-width: 500px) {
+                width: 40%;
+            }
             ul{
                 width: 100%;
             }
@@ -70,11 +82,17 @@ header{
         text-align: center;
         top : 45%;
         transform: translateY(-50%);
+        @media screen and (max-width: 770px) {
+            top : 40%;
+        }
 
         .texte_intro{
             @include t_orange;
             font-size: 3.5rem;
             height: 3.5rem;
+            @media screen and (max-width: 770px) {
+                font-size: 2rem ;
+            }
         }
         h1{
             @include t_bold;
@@ -83,9 +101,15 @@ header{
             font-size: 4rem;
             margin-top: -15px;
             margin-bottom: 40px;
+            @media screen and (max-width: 770px) {
+                font-size: 3rem ;
+            }
         }
         img{
             height: 35px;
+            @media screen and (max-width: 770px) {
+                height: 25px;
+            }
         }
         .slogan{
             margin-top: 40px;
@@ -93,6 +117,11 @@ header{
             font-family: $light;
             text-transform: uppercase;
             letter-spacing: 5px;
+            @media screen and (max-width: 770px) {
+                font-size: 0.8rem;
+                width: 80%;
+                margin: 40px auto;
+            }
         }
     }
 }

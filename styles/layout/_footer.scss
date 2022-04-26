@@ -11,6 +11,12 @@ footer{
         display: flex;
         justify-content: center;
 
+        @media screen and (max-width: 770px) {
+            width: 90%;
+            justify-content: left;
+            align-items: center;
+        }
+
         .footer_left{
             width: 50%;
             max-width: 450px;
@@ -18,6 +24,9 @@ footer{
             justify-content: right;
             align-items: center;
             
+            @media screen and (max-width: 770px) {
+                display: none;
+            }
 
             .footer_left_container{
                 padding-right: 40px;
@@ -50,9 +59,20 @@ footer{
             justify-content: left;
             align-items: center;
 
+            @media screen and (max-width: 770px) {
+                width: 100%;
+            }
+
+           
+
             .footer_right_container{
                 padding-left: 40px;
                 width: 50%;
+
+                @media screen and (max-width: 770px) {
+                    padding-left: 10px;
+                    width: 100%;
+                }
 
                 .newsletter{
                     margin-bottom: 30px;
@@ -74,6 +94,10 @@ footer{
                 .follow{
                     display: flex; 
                     justify-content: space-between;
+
+                    @media screen and (max-width: 770px) {
+                        
+                    }
 
                     h3{
                         @include t_bold;
