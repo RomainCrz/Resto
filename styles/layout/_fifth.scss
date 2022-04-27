@@ -29,6 +29,10 @@
                 border-radius: 50px;
                 left: 50%;
                 transform: translate(-50%,-50%);
+                @media screen and (max-width: 770px) {
+                    height : 70px;
+                }
+                
             }
             .cuisinier_container{
                 margin : 60px auto 0px;
