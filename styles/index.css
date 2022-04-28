@@ -339,6 +339,7 @@ header .intro .slogan {
 @media screen and (max-width: 770px) {
   .second {
     margin-bottom: 50px;
+    height: 700px;
   }
 }
 
@@ -350,7 +351,7 @@ header .intro .slogan {
 
 @media screen and (max-width: 770px) {
   .second .background {
-    height: 600px;
+    height: 100%;
   }
 }
 
@@ -368,6 +369,7 @@ header .intro .slogan {
 @media screen and (max-width: 770px) {
   .second .background .affiche_menu {
     width: 90%;
+    top: -40%;
   }
 }
 
@@ -424,7 +426,7 @@ header .intro .slogan {
 }
 
 .second .background .affiche_menu .menu img {
-  height: 70px;
+  height: 80px;
   border-radius: 100px;
   margin-right: 10px;
 }
@@ -450,6 +452,12 @@ header .intro .slogan {
   margin-left: 10px;
   margin-right: 30px;
   border-bottom: 1px dashed grey;
+}
+
+@media screen and (max-width: 770px) {
+  .second .background .affiche_menu .menu .plat {
+    margin: 5px 20px;
+  }
 }
 
 .second .background .affiche_menu .menu .plat .plat_desc {
